@@ -3,6 +3,8 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 
+const botName = '/tensor';
+
 bot.login(TOKEN);
 
 bot.on('ready', () => {
@@ -10,7 +12,12 @@ bot.on('ready', () => {
 });
 
 bot.on('message', msg => {
-  if (msg.content === 'ping') {
+  // Short-circuit if the message does not exist or does not have the bot name in it
+  if (!msg.content || !msg.content.startsWith(botName)) return;
+
+  const msgContent = msg.content.toLowerCase();
+
+  if (msgContent === `${botName}add`) {
     msg.reply('pong');
     msg.channel.send('pong');
 
