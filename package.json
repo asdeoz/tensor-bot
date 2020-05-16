@@ -1,13 +1,12 @@
 {
-  "name": "discord-bot",
+  "name": "tensor-bot",
   "version": "1.0.0",
-  "description": "Discord bot for SitePoint",
+  "description": "Discord bot to simulate a Tension Pool bowl",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michiel Mulders",
+  "author": "Carles Garcia",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.5.1",
