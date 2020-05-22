@@ -4,7 +4,7 @@
   "description": "Discord bot to simulate a Tension Pool bowl",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js"
   },
   "author": "Carles Garcia",
   "license": "ISC",
